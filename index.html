@@ -1,32 +1,48 @@
-# Define the HTML content
-html_content = """
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enlaces a SVG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
     <h1>Enlaces a Archivos SVG</h1>
     <ul>
-        <li><a href="1.svg" download>Descargar 1.svg</a></li>
-        <li><a href="2.svg" download>Descargar 2.svg</a></li>
-        <li><a href="3.svg" download>Descargar 3.svg</a></li>
-        <li><a href="4.svg" download>Descargar 4.svg</a></li>
-        <li><a href="5.svg" download>Descargar 5.svg</a></li>
-        <li><a href="6.svg" download>Descargar 6.svg</a></li>
-        <li><a href="8.svg" download>Descargar 8.svg</a></li>
+        <li><a href="1.html">Ver 1.svg</a></li>
+        <li><a href="2.html">Ver 2.svg</a></li>
+        <li><a href="3.html">Ver 3.svg</a></li>
+        <li><a href="4.html">Ver 4.svg</a></li>
+        <li><a href="5.html">Ver 5.svg</a></li>
+        <li><a href="6.html">Ver 6.svg</a></li>
+        <li><a href="8.html">Ver 8.svg</a></li>
     </ul>
 </body>
 </html>
-"""
-
-# Define the path to save the HTML file
-html_file_path = '/mnt/data/enlaces_svg.html'
-
-# Write the HTML content to the file
-with open(html_file_path, 'w') as file:
-    file.write(html_content)
-
-html_file_path
