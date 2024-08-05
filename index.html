@@ -1,56 +1,32 @@
-
+# Define the HTML content
+html_content = """
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACTIVE CHAMPI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-        }
-        .item {
-            margin: 10px;
-        }
-        .item img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>Enlaces a SVG</title>
 </head>
 <body>
-    <h1>ACTIVE CHAMPI</h1>
-    <div class="container">
-        <div class="item">
-            <img src="1.svg" alt="Image 1">
-        </div>
-        <div class="item">
-            <img src="2.svg" alt="Image 2">
-        </div>
-        <div class="item">
-            <img src="3.svg" alt="Image 3">
-        </div>
-        <div class="item">
-            <img src="4.svg" alt="Image 4">
-        </div>
-        <div class="item">
-            <img src="5.svg" alt="Image 5">
-        </div>
-        <div class="item">
-            <img src="6.svg" alt="Image 6">
-        </div>
-        <div class="item">
-            <img src="8.svg" alt="Image 8">
-        </div>
-    </div>
+    <h1>Enlaces a Archivos SVG</h1>
+    <ul>
+        <li><a href="1.svg" download>Descargar 1.svg</a></li>
+        <li><a href="2.svg" download>Descargar 2.svg</a></li>
+        <li><a href="3.svg" download>Descargar 3.svg</a></li>
+        <li><a href="4.svg" download>Descargar 4.svg</a></li>
+        <li><a href="5.svg" download>Descargar 5.svg</a></li>
+        <li><a href="6.svg" download>Descargar 6.svg</a></li>
+        <li><a href="8.svg" download>Descargar 8.svg</a></li>
+    </ul>
 </body>
 </html>
+"""
+
+# Define the path to save the HTML file
+html_file_path = '/mnt/data/enlaces_svg.html'
+
+# Write the HTML content to the file
+with open(html_file_path, 'w') as file:
+    file.write(html_content)
+
+html_file_path
